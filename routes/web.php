@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+
+    $config = config('comics.film');
+    $footer_img = config('comics.footer_img');
+    $footer_link = config('comics.footer_link');
+
+
+
+    return view('home', compact("config","footer_img","footer_link"));
+})-> name('home');
+
+
+Route::get('/single', function () {
+    $title = 'single';
+    $footer_img = config('comics.footer_img');
+    $footer_link = config('comics.footer_link');
+    return view('single', compact('title',"footer_img","footer_link"));
+})-> name('single');
+

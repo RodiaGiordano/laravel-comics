@@ -1,1 +1,187 @@
 @import "~bootstrap/scss/bootstrap";
+
+.header_wrapper {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+
+        .active {
+            color: #0282f9;
+            box-shadow: #0282f9 0px 68px 0px -7px;
+        }
+    }
+}
+
+.jumbo {
+    height: 400px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0% -40%;
+    }
+}
+.main_wrapper {
+    position: relative;
+    background-color: darkblue;
+
+    padding: 50px 0 20px;
+
+    margin: auto;
+    color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.5rem;
+
+    .label_series {
+        position: absolute;
+        top: -17px;
+        left: -20px;
+    }
+}
+.load_more,
+.label_series {
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    padding: 10px 40px;
+    margin: 0 auto;
+    background-color: #0282f9;
+    color: white;
+}
+
+.card {
+    width: calc(100% / 6 - 20px);
+    font-size: 0.6rem;
+
+    img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: 0% 0%;
+    }
+}
+
+footer {
+    height: 900px;
+}
+
+footer > * {
+    color: white;
+    padding: 50px 0;
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+.footer_top {
+    background-color: #0282f9;
+
+    section {
+        width: 70%;
+        margin: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .card {
+        background-color: transparent;
+        width: calc(100% / 5 - 10px);
+        gap: 10px;
+
+        img {
+            width: 40px;
+            aspect-ratio: 1;
+
+            object-fit: contain;
+        }
+    }
+}
+
+.footer_middle {
+    // background-image: url("../../public/vue-dc-comics-1/img/dc-logo-bg.png"),
+    //     url("../../public/vue-dc-comics-1/img/footer-bg.jpg");
+    background-color: lightgrey;
+    background-size: 30%, cover;
+
+    background-position: 75%;
+    background-repeat: no-repeat;
+
+    height: calc(100% / 2);
+
+    section {
+        width: 75%;
+        height: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .listLinks {
+            ul {
+                padding-top: 10px;
+                color: #6c717a;
+
+                li {
+                    font-size: 0.9rem;
+                    line-height: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+.footer_bottom {
+    background-color: #303030;
+    height: calc(100% / 5);
+
+    section {
+        width: 75%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sing_up {
+            border: 3px solid #0282f9;
+            padding: 20px;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                width: 50px;
+            }
+
+            .follow_us {
+                color: #0282f9;
+                font-weight: bold;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
